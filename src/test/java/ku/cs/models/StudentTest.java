@@ -34,4 +34,10 @@ class StudentTest {
         student.changeName("StudentNewNameTest");
         assertEquals("StudentNewNameTest", student.getName());
     }
+
+    @Test
+    @DisplayName("Student should be same id")
+    void testStudentSameId(){
+        assertTrue(student.isId("6610402281"));
+    }
 }

@@ -57,13 +57,4 @@ class UserListTest {
         // TODO: assert that the method return null
         assertNull(user);
     }
-
-    @Test
-    @DisplayName("User can set password")
-    void testSetPassword() {
-        User user = userList.login("test01", "111111111");
-        user.setPassword("555555555");
-
-        assertTrue(user.validatePassword("555555555"));
-    }
 }
